@@ -1,0 +1,22 @@
+{
+  "name": "aws-param-store-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtruong0/aws-param-store-env.git"
+  },
+  "author": "Dustin Truong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtruong0/aws-param-store-env/issues"
+  },
+  "homepage": "https://github.com/dtruong0/aws-param-store-env#readme",
+  "dependencies": {
+    "aws-param-store": "^3.2.0"
+  }
+}
