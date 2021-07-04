@@ -1,7 +1,7 @@
 {
   "name": "exec-with-aws-param-store",
   "description": "Execute script with environment variables from AWS parameter store",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "dustin @dtruong0",
   "bin": {
     "exec-with-aws-param-store": "./bin/run"
