@@ -1,22 +1,49 @@
 {
-  "name": "aws-param-store-env",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "exec-with-aws-param-store",
+  "description": "Execute script with environment variables from AWS parameter store",
+  "version": "0.0.0",
+  "author": "dustin @dtruong0",
+  "bin": {
+    "exec-with-aws-param-store": "./bin/run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dtruong0/aws-param-store-env.git"
-  },
-  "author": "Dustin Truong",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dtruong0/aws-param-store-env/issues"
-  },
-  "homepage": "https://github.com/dtruong0/aws-param-store-env#readme",
+  "bugs": "https://github.com/dtruong0/exec-with-aws-param-store/issues",
   "dependencies": {
-    "aws-param-store": "^3.2.0"
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.2"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@oclif/test": "^1.2.8",
+    "chai": "^4.3.4",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1",
+    "aws-param-store": "^3.2.0",
+    "aws-sdk": "^2.935.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/dtruong0/exec-with-aws-param-store",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "exec-with-aws-param-store"
+  },
+  "repository": "dtruong0/exec-with-aws-param-store",
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
   }
 }
